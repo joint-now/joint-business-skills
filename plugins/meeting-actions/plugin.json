@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "meeting-actions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "회의 메모에서 합의한 후속 작업과 추가로 확인할 항목을 정리합니다.",
   "author": {
     "name": "JOINT"

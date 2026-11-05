@@ -1,6 +1,6 @@
 # 구현 현황
 
-이 프로젝트는 다른 회사 사용자가 자기 Claude·Codex 계정에 설치하는 공개 마켓플레이스입니다. `joint-business-skills`가 `meeting-actions`와 `business-workflows` 플러그인을 제공합니다. 테스트용 회의 후속 작업 스킬 1개와 기존 업무 스킬 4개로 구성하며 초기 버전은 각각 `0.1.0`입니다. Gemini CLI는 같은 SKILL.md를 개별 설치합니다.
+이 프로젝트는 공개 마켓플레이스입니다. 다른 회사 사용자가 자기 Claude·Codex 계정에 설치합니다. `joint-business-skills`가 `meeting-actions`와 `business-workflows` 플러그인을 제공합니다. 테스트용 회의 후속 작업 스킬 1개와 기존 업무 스킬 4개로 구성하며 초기 버전은 각각 `0.1.0`입니다. Gemini CLI는 같은 SKILL.md를 개별 설치합니다.
 
 ## 파일과 동작
 

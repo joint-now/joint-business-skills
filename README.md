@@ -1,6 +1,6 @@
 # Joint Business Skills
 
-다른 회사의 업무 담당자도 자기 회사 자료로 사용하는 공개 스킬 저장소입니다. Claude와 Codex용 플러그인을 제공하고 Gemini CLI에서는 같은 스킬을 개별 설치할 수 있습니다. 회사명과 서비스 설명, 회의 기록은 사용자가 입력합니다.
+공개 스킬 저장소입니다. 다른 회사의 업무 담당자도 자기 회사 자료로 사용합니다. Claude와 Codex용 플러그인을 제공하고 Gemini CLI에서는 같은 스킬을 개별 설치할 수 있습니다. 회사명과 서비스 설명, 회의 기록은 사용자가 입력합니다.
 
 마켓플레이스 이름은 `joint-business-skills`입니다. 먼저 `meeting-actions` 플러그인의 `joint-meeting-actions` 스킬로 설치와 업데이트를 확인합니다. 이 스킬은 회의 메모에서 작업·담당자·기한·상태·근거를 표로 정리합니다. 기존 업무 스킬 4개는 `business-workflows` 플러그인에 있습니다.
 
