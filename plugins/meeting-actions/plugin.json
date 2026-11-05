@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "meeting-actions",
+  "version": "0.1.0",
+  "description": "회의 메모에서 합의한 후속 작업과 추가로 확인할 항목을 정리합니다.",
+  "author": {
+    "name": "JOINT"
+  },
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "JOINT Meeting Actions",
+        "shortDescription": "Turn notes into action items",
+        "longDescription": "Extract action items, owners, deadlines, status, and evidence from meeting notes you provide. Preserve the difference between agreed commitments and suggestions, and flag missing owners and dates. This initial public test uses one shared skill across Claude, Codex, and Gemini CLI.",
+        "category": "Business & Operations",
+        "defaultPrompt": "회의 메모에서 담당자와 기한이 있는 후속 작업을 정리해 주세요.",
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png"
+      }
+    }
+  }
+}

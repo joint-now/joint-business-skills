@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "business-workflows",
+  "version": "0.1.0",
+  "description": "회사별 자료를 입력받아 고객사 조사부터 미팅 후속 메일까지 정리하는 업무 스킬",
+  "author": {
+    "name": "JOINT"
+  },
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Business Workflows",
+        "shortDescription": "Prepare customer meetings",
+        "longDescription": "Use your own company context and meeting materials to research accounts, prepare customer meetings, summarize discussions, and draft follow-up emails. See the repository verification log for the environments actually tested.",
+        "category": "Business & Operations",
+        "defaultPrompt": "회사 설명과 회의 자료를 바탕으로 고객 미팅을 준비해 주세요.",
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png"
+      }
+    }
+  }
+}

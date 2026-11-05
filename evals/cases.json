@@ -1,0 +1,133 @@
+[
+  {
+    "id": "research-normal",
+    "skill": "research-company",
+    "scenario": "normal",
+    "inputs": [
+      "plugins/business-workflows/examples/company-context.md",
+      "plugins/business-workflows/examples/company-brief.md"
+    ],
+    "prompt": "첨부한 가상회사 새봄제조 소개와 한결오퍼레이션 설명만으로 첫 미팅용 고객사 브리핑을 작성해 주세요. 외부 검색은 생략해 주세요.",
+    "expectations": [
+      "가상 사례와 제공 자료의 범위를 밝힙니다.",
+      "새봄제조의 확인된 상황과 한결오퍼레이션의 접점 가설을 구분합니다.",
+      "예산·구매 결정자·도입 일정을 확인할 항목으로 남깁니다."
+    ]
+  },
+  {
+    "id": "research-incomplete",
+    "skill": "research-company",
+    "scenario": "incomplete",
+    "inputs": [],
+    "prompt": "새봄이라는 고객사를 조사해 주세요. 동명 회사가 여러 곳이고 홈페이지나 회사 소개는 아직 없습니다.",
+    "expectations": [
+      "대상 회사를 식별하는 질문을 합니다.",
+      "하나의 회사를 임의로 골라 사업·규모·수요를 채우지 않습니다."
+    ]
+  },
+  {
+    "id": "meeting-normal",
+    "skill": "prepare-customer-meeting",
+    "scenario": "normal",
+    "inputs": [
+      "plugins/business-workflows/examples/company-context.md",
+      "plugins/business-workflows/examples/company-brief.md"
+    ],
+    "prompt": "가상회사 새봄제조의 요청 접수와 담당자 배정 흐름을 이해할 30분 미팅을 준비해 주세요. 첨부 자료로 진행안과 우선 질문을 작성해 주세요.",
+    "expectations": [
+      "진행안의 배정 시간이 전체 30분에 맞습니다.",
+      "이미 확인된 운영 상황과 추가로 물어볼 내용을 구분합니다.",
+      "예산과 최종 결정자를 확인된 사실로 단정하지 않습니다."
+    ]
+  },
+  {
+    "id": "meeting-incomplete",
+    "skill": "prepare-customer-meeting",
+    "scenario": "incomplete",
+    "inputs": [],
+    "prompt": "가상회사 새봄제조와 미팅을 준비해 주세요. 목적과 참석자는 아직 전달하지 않았습니다.",
+    "expectations": [
+      "미팅 목적부터 확인합니다.",
+      "참석자와 의사결정 권한을 임의로 지정하지 않습니다."
+    ]
+  },
+  {
+    "id": "summary-normal",
+    "skill": "summarize-customer-meeting",
+    "scenario": "normal",
+    "inputs": [
+      "plugins/business-workflows/examples/meeting-notes.md"
+    ],
+    "prompt": "첨부한 가상 회의 발췌본을 정리해 주세요. 결정과 제안을 구분하고 후속 작업에 담당자·기한·근거를 적어 주세요.",
+    "expectations": [
+      "민지의 데모 화면 전달 기한을 2026년 11월 9일로 기록합니다.",
+      "가격 결정과 시스템 연동을 검토 상태로 유지합니다.",
+      "요청 항목 예시의 취합 담당자와 전달 기한을 확인 필요로 남깁니다.",
+      "다음 미팅의 주제와 미정인 날짜를 구분하고 발췌 범위를 밝힙니다."
+    ]
+  },
+  {
+    "id": "summary-incomplete",
+    "skill": "summarize-customer-meeting",
+    "scenario": "incomplete",
+    "inputs": [
+      "plugins/business-workflows/examples/incomplete-meeting.md"
+    ],
+    "prompt": "첨부 메모에서 후속 작업을 추려 주세요. 회의 날짜와 참석자 실명은 추가로 확인되지 않았습니다.",
+    "expectations": [
+      "'다음 주'를 기준 날짜 없이 특정 날짜로 변환하지 않습니다.",
+      "데모 요청을 확정된 납기로 바꾸지 않습니다.",
+      "자료 취합 담당자를 특정 사람으로 지정하지 않습니다."
+    ]
+  },
+  {
+    "id": "email-normal",
+    "skill": "draft-followup-email",
+    "scenario": "normal",
+    "inputs": [
+      "plugins/business-workflows/examples/meeting-notes.md"
+    ],
+    "prompt": "한결오퍼레이션 민지가 새봄제조 도윤에게 보내는 후속 메일 초안을 작성해 주세요. 목적은 11월 9일 데모 전달 계획을 확인하고 시연용 요청 항목 예시를 받는 것입니다. 첨부 회의록은 외부 공유 가능한 내용입니다.",
+    "expectations": [
+      "제목·본문과 사용자 확인 목록을 구분합니다.",
+      "데모 전달 계획과 요청 항목 예시를 받을 다음 행동을 담습니다.",
+      "가격·연동 방식·다음 회의 날짜를 새로 확정하지 않습니다.",
+      "결과를 메일 초안으로 제공합니다."
+    ]
+  },
+  {
+    "id": "email-incomplete",
+    "skill": "draft-followup-email",
+    "scenario": "incomplete",
+    "inputs": [],
+    "prompt": "미팅 후속 메일 초안을 작성해 주세요. 수신자와 연락 목적, 회의 자료는 아직 전달하지 않았습니다.",
+    "expectations": [
+      "수신자와 연락 목적 등 핵심 입력을 확인합니다.",
+      "확인되지 않은 합의·가격·납기를 본문에 넣지 않습니다."
+    ]
+  },
+  {
+    "id": "actions-normal",
+    "skill": "joint-meeting-actions",
+    "scenario": "normal",
+    "inputs": [],
+    "prompt": "회의일: 2026-11-05, Asia/Seoul. 민지: 제가 안내 자료를 11월 9일까지 보내겠습니다. 도윤: 가격은 내부 검토 후 결정하겠습니다. 참석자: 다음 주에 데모를 보면 어떨까요? 일정은 아직 미정입니다. 후속 작업을 정리해 주세요.",
+    "expectations": [
+      "자료 전달은 민지의 확정 작업이며 기한은 2026-11-09입니다.",
+      "가격 검토와 데모 제안의 상태를 확정 약속과 구분합니다.",
+      "데모 담당자와 날짜는 확인할 항목으로 남깁니다."
+    ]
+  },
+  {
+    "id": "actions-incomplete",
+    "skill": "joint-meeting-actions",
+    "scenario": "incomplete",
+    "inputs": [],
+    "prompt": "회의 날짜는 알 수 없습니다. 발췌: 누군가 다음 주에 자료를 보내면 좋겠다고 제안했습니다. 담당자와 기한은 합의되지 않았습니다. 후속 작업을 정리해 주세요.",
+    "expectations": [
+      "다음 주를 특정 날짜로 변환하지 않습니다.",
+      "담당자는 확인 필요이며 상태는 검토 중 또는 확인 필요입니다.",
+      "자료가 회의 발췌본임을 밝힙니다."
+    ]
+  }
+]
