@@ -1,6 +1,6 @@
 # 구현 현황
 
-이 프로젝트는 공개 마켓플레이스입니다. 다른 회사 사용자가 자기 Claude·Codex 계정에 설치합니다. `joint-business-skills`가 `meeting-actions`와 `business-workflows` 플러그인을 제공합니다. 테스트용 회의 후속 작업 스킬 1개와 기존 업무 스킬 4개로 구성하며 초기 버전은 각각 `0.1.0`입니다. Gemini CLI는 같은 SKILL.md를 개별 설치합니다.
+이 프로젝트는 공개 마켓플레이스입니다. 다른 회사 사용자가 자기 Claude·Codex 계정에 설치합니다. `joint-business-skills`가 `meeting-actions`와 `business-workflows` 플러그인을 제공합니다. 테스트용 회의 후속 작업 스킬 1개와 기존 업무 스킬 4개로 구성하며 현재 버전은 `meeting-actions`가 `0.1.1`, `business-workflows`가 `0.1.0`입니다. Gemini CLI는 같은 SKILL.md를 개별 설치합니다.
 
 ## 파일과 동작
 
@@ -13,6 +13,7 @@
 | `plugins/business-workflows/.claude-plugin/plugin.json` | 플러그인 식별자, 버전, 설명과 라이선스를 정의합니다. |
 | `plugins/business-workflows/skills/*/SKILL.md` | 요청에 맞는 업무 지침과 결과 형식을 제공합니다. |
 | `plugins/business-workflows/examples/` | 회사 설명과 가상 업무 자료, 요청 예시를 제공합니다. |
+| `docs/publication-status.json` | 공개 저장소·릴리스·호스트별 검증과 공개 검색 등록 상태를 기록합니다. |
 | `evals/cases.json` | 스킬마다 정상 입력과 자료 부족 입력, 총 10개 평가 기준을 정의합니다. |
 | `scripts/check.mjs` | JSON·YAML, 경로, 이름, 문서 연결과 평가 입력을 검사합니다. |
 | `scripts/package-plugin.py` | 플러그인 폴더와 루트 LICENSE를 ZIP에 담고 SHA-256 파일을 만듭니다. |

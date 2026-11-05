@@ -1,0 +1,58 @@
+{
+  "verified_on": "2026-11-05",
+  "repository": "https://github.com/joint-now/joint-business-skills",
+  "visibility": "PUBLIC",
+  "license": "MIT",
+  "pilot": {
+    "name": "meeting-actions",
+    "skill": "joint-meeting-actions",
+    "version": "0.1.1"
+  },
+  "claude": {
+    "cli_version": "2.1.318",
+    "format": "pass",
+    "remote_install": "pass",
+    "remote_upgrade": "0.1.0 -> 0.1.1",
+    "web_install_version": "0.1.1",
+    "web_skill_enabled": true,
+    "web_marketplace_auto_sync": true,
+    "model_cases_completed": 0,
+    "model_blocker": "ACCOUNT_USAGE_LIMIT",
+    "public_directory_submitted": false,
+    "public_directory_blocker": "ORGANIZATION_SUBMISSION_PERMISSION_REQUIRED"
+  },
+  "codex": {
+    "cli_version": "0.166.0",
+    "remote_install": "pass",
+    "remote_upgrade": "0.1.0 -> 0.1.1",
+    "model_cases_completed": 3,
+    "loaded_installed_skill_versions": [
+      "0.1.0",
+      "0.1.1"
+    ],
+    "desktop_ui_verified": false,
+    "public_directory_submitted": false,
+    "public_directory_blockers": [
+      "COMPANY_PUBLISHER_ORGANIZATION_NOT_AVAILABLE",
+      "VERIFIED_PUBLISHER_AND_LISTING_POLICIES_REQUIRED"
+    ]
+  },
+  "gemini": {
+    "cli_version": "0.67.0",
+    "remote_install": "pass",
+    "user_skill_list": "pass",
+    "remote_reinstall_matches_source": true,
+    "web_app_verified": false,
+    "model_execution_verified": false
+  },
+  "other_company_account_verified": false,
+  "business_workflows_model_cases_completed": 0,
+  "release": {
+    "url": "https://github.com/joint-now/joint-business-skills/releases/tag/v0.1.1",
+    "tag": "v0.1.1",
+    "prerelease": true,
+    "anonymous_download_http": 200,
+    "archive_sha256": "14aac8cccc72bb9b4cf98dda61d4b16c96280fb465c06894d81b25d2c370c546",
+    "archive_matches_local": true
+  }
+}
